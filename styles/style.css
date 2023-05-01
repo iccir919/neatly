@@ -22,7 +22,7 @@ header {
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-decoration: none;
     list-style: none;
     padding: 0;
@@ -42,14 +42,17 @@ section h2 {
 }
 
 section p {
-    color: #82B9E5
+    color: #82B9E5;
 }
 
 
 @media (max-width: 576px) { 
+    nav, section {
+        margin: 0.5rem 1.5rem;
+    }
+
     nav {
-        margin: 0.5rem 1rem;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     nav ul {
@@ -61,44 +64,94 @@ section p {
         text-align: center;
     }
 
-    section {
-        margin: 2.5rem 2rem;
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 15px;
+        line-height: 1.5;
     }
 }
 
 @media (min-width: 576px) and (max-width: 768px) { 
-    nav {
-        margin: 2rem 1rem;
-        font-size: 17px;
+    nav, section {
+        margin: 2rem 3rem;
     }
 
-    section {
-        margin: 3rem 2rem;
+    nav {
+        font-size: 18px;
+    }
+
+    nav li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 16px;
+        line-height: 1.75;
     }
 }
 
 @media (min-width: 768px) and (max-width: 992px) { 
+    nav, section {
+        margin: 4rem 5rem;
+    }
+
     nav {
-        margin: 3rem 2rem;
         font-size: 23px;
     }
 
-    section {
-        margin: 2rem 3rem;
+    section h2 {
+        font-size: 3rem;
+    }
+
+    section p {
+        font-size: 19px;
+        line-height: 1.75;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) { 
+    nav, section {
+        margin: 4rem 6rem;
+    }
+
     nav {
-        margin: 4rem 3rem;
         font-size: 26px;
+    }
+
+    section h2 {
+        font-size: 4rem;
+    }
+
+    section p {
+        font-size: 21px;
+        line-height: 1.75;
     }
 }
 
 @media (min-width: 1200px) { 
+    nav, section {
+        margin: 6rem 7rem;
+    }
+
     nav {
-        margin: 5rem 4rem;
-        font-size: 31px;
+        font-size: 32px;
+    }
+
+    section h2 {
+        font-size: 4.5rem;
+    }
+
+    section p {
+        font-size: 24px;
+        line-height: 1.75;
     }
 }
 
