@@ -2,42 +2,53 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Neil Ricci" />
         <meta 
             name="description"
             content="Neatly Cleaning Services is a company in the San Francisco Bay Area that provides cleaning services for houses and apartments."
         /> 
-        <meta name="viewport" content="width=device-width">
+        <title>Neatly House Services</title>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TKSZRPDJ9"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7TKSZRPDJ9');
+        </script>
+
         <link rel="icon" href="favicon.png" type="image/x-icon" />
         <link rel="stylesheet" href="styles/normalize.css" />
         <link rel="stylesheet" href="styles/style.css" />
-        <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Montserrat" />
-        <title>Neatly House Services</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     </head>
     <body>
-        <header>
-            <img src="images/header-image.jpg" alt="Header Image" class="header-image">
-            <img src="images/logo-image.png" alt="Logo Image" class="logo-image">
-            <nav>
-                <ul class="navbar-list">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Cleaning Services</a></li>
-                    <li><a href="#">Schedule a cleaning service</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur purus diam, ultricies in euismod varius, fringilla cursus nibh. Cras pretium malesuada maximus. Pellentesque in magna scelerisque, pharetra ante in, eleifend lorem. Nunc faucibus viverra varius. Pellentesque pretium ligula sit amet dictum tempus. Donec convallis elementum tortor nec euismod. Cras sollicitudin augue sem, sed euismod lectus feugiat sed. Nullam volutpat eleifend diam. Donec blandit condimentum ipsum non ornare. Cras tortor elit, semper ut viverra a, venenatis vitae massa. Vivamus hendrerit rhoncus nisl, vel pulvinar velit tempor ac. Maecenas scelerisque sem in consequat laoreet. Ut tincidunt posuere lorem, nec dictum nisi blandit vitae. Vivamus tincidunt tortor eros, eget laoreet tellus aliquet eget. Nam facilisis cursus lectus, in vulputate eros accumsan at. <br>
+        <div class="col-lg-8 mx-auto p-4 py-md-5">
+            <header class="d-flex align-items-center pb-3 mb-5 border-bottom"">
+                <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+                    <img class="bi me-2" src="images/blue_logo.png"  width="25" height="32" alt="Neatly logo">
+                    <span class="fs-4">Neatly House Services</span>
+                </a>
+            </header>
 
-                Nam a ultrices libero, sit amet dapibus risus. Donec finibus massa odio, et scelerisque justo commodo ac. In quis orci et justo tincidunt pretium. Sed malesuada nisi id nisl lacinia fringilla. Fusce mollis ullamcorper mi vitae lacinia. Ut vel enim a lorem volutpat tempus. Integer tempor varius tellus. In turpis arcu, tincidunt non aliquam ac, rutrum ac purus. Sed feugiat maximus neque vitae maximus.</p>
-        </section>
-        <section>
-            <h2>Cleaning Services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur purus diam, ultricies in euismod varius, fringilla cursus nibh. Cras pretium malesuada maximus. Pellentesque in magna scelerisque, pharetra ante in, eleifend lorem. Nunc faucibus viverra varius. Pellentesque pretium ligula sit amet dictum tempus. Donec convallis elementum tortor nec euismod. Cras sollicitudin augue sem, sed euismod lectus feugiat sed. Nullam volutpat eleifend diam. Donec blandit condimentum ipsum non ornare. Cras tortor elit, semper ut viverra a, venenatis vitae massa. Vivamus hendrerit rhoncus nisl, vel pulvinar velit tempor ac. Maecenas scelerisque sem in consequat laoreet. Ut tincidunt posuere lorem, nec dictum nisi blandit vitae. Vivamus tincidunt tortor eros, eget laoreet tellus aliquet eget. Nam facilisis cursus lectus, in vulputate eros accumsan at. <br>
+            <main>
+                <div class="px-4 py-3 my-5 text-center">
+                    <img class="d-block mx-auto mb-4" src="images/full_logo_image.png" alt="" width="225" height="135">
+                    <h1 class="display-6 text-body-emphasis">"A clean home is a happy home"</h1>
+                    <div class="col-lg-10 mx-auto">
+                        <p class="lead mb-4">Wave goodbye to the chore of cleaning and immerse yourself in what truly matters. Let us bring our expertise and top-notch supplies to ensure your space gleams with perfection. Neatly isn't just a service; it's a lifestyle. Elevate your living standards – choose Neatly today and experience the joy of pristine living.</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Call us today!</button>
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Request a quote!</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
 
-                Nam a ultrices libero, sit amet dapibus risus. Donec finibus massa odio, et scelerisque justo commodo ac. In quis orci et justo tincidunt pretium. Sed malesuada nisi id nisl lacinia fringilla. Fusce mollis ullamcorper mi vitae lacinia. Ut vel enim a lorem volutpat tempus. Integer tempor varius tellus. In turpis arcu, tincidunt non aliquam ac, rutrum ac purus. Sed feugiat maximus neque vitae maximus.</p>
-        </section>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     </body>
 </html>
