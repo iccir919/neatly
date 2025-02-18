@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <meta name="author" content="Neil Ricci" />
         <meta 
             name="description"
@@ -10,87 +11,67 @@
         /> 
         <title>Neatly House Services</title>
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TKSZRPDJ9"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_images/">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_images/favicon-16x16.png">
 
-        gtag('config', 'G-7TKSZRPDJ9');
-        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-        <link rel="icon" href="favicon.png" type="image/x-icon" />
-        <link rel="stylesheet" href="styles/normalize.css" />
-        <link rel="stylesheet" href="styles/style.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="manifest" href="manifest.json" />
+        <link rel="stylesheet" href="styles/index.css" />
     </head>
     <body>
-        <div class="col-lg-9 mx-auto p-4 py-md-5">
-            <header class="d-flex align-items-center pb-3 mb-5 border-bottom"">
-                <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
-                    <img class="bi me-2" src="images/blue_logo.png"  width="25" height="32" alt="Neatly logo">
-                    <span class="fs-4">Neatly House Services</span>
-                </a>
-            </header>
-
-            <main>
-                <div class="container-fluid px-4 py-3 text-center">
-                    <img class="d-block mx-auto mb-4" src="images/full_logo_image.png" alt="" width="225" height="135">
-                    <h1 class="display-6 text-body-emphasis">"A clean home is a happy home"</h1>
-                    <div class="col-lg-10 mx-auto">
-                        <p class="lead mb-4">Wave goodbye to the chore of cleaning and immerse yourself in what truly matters. Let us bring our expertise and top-notch supplies to ensure your space gleams with perfection. Neatly isn't just a service; it's a lifestyle. Elevate your living standards – choose Neatly today and experience the joy of pristine living.</p>
-                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Call us today!</button>
-                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Request a quote!</button>
-                        </div>
-                    </div>
+        <header>
+            <div class="header-branding-container">
+                <img class="header-logo-img" src="assets/blue_logo.png" alt="Neatly logo">
+                <h1>neatly cleaning services</h1>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="#about-us">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#our-services">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="#reviews">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="#contact">Contact us</a>
                 </div>
-                <div class="container px-4 py-3">
-                    <h2 class="text-center my-4">Send Us A Message</h2>
-                    <form   action="https://formspree.io/f/xjvqrwlr" method="POST">
-                        <h4 class="mb-3">Your Contact Information</h4>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <label for="firstName" class="form-label">First name</label>
-                                <input type="text" class="form-control" id="firstName" name="firstName" required>
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="lastName" class="form-label">Last name</label>
-                                <input type="text" class="form-control" id="lastName" name="lastName" required>
-                            </div>
-                            <div class="col-12">
-                                <label for="email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="phone" class="form-label">Phone number</label>
-                                <input type="tel" class="form-control" id="phone" name="phone">
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center justify-content-around">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="contactMethod" id="contactPhone">
-                                    <label class="form-check-label" for="contactPhone">Call me</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="contactMethod" id="contactText">
-                                    <label class="form-check-label" for="contactText">Text me</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="contactMethod" id="contactEmail">
-                                    <label class="form-check-label" for="contactEmail">Email me</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control" id="message" name="message" rows="3" placeholder="How can Neatly help you?"></textarea>
-                            </div>
-                        </div>
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Send</button>
-                    </form>
-                </div>
-            </main>
+            </nav>
+        </header>
+        <main>
+            
+            <section id="home">
 
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+            </section id="about-us">
+
+            <section>
+
+            </section id="our-services">
+
+            <section id="reviews">
+
+            </section>
+
+            <section id="blog">
+
+            </section>
+
+            <form id="contact">
+
+            </form>
+        </main>
+        <footer>
+
+        </footer>
     </body>
 </html>

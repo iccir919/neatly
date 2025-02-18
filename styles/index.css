@@ -1,0 +1,35 @@
+html, 
+body {
+    margin: 0;
+    font-family: "Montserrat", serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-branding-container {
+    display: flex;
+}
+
+.header-branding-container h1 {
+    font-family: "Oxygen", serif;
+    font-weight: 300;
+
+}
+
+.header-logo-img {
+    width: 10vh;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-nav a {
+    text-decoration: none;
+}
+
