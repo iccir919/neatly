@@ -4,12 +4,6 @@ body {
     font-family: "Montserrat", serif;
 }
 
-.section-heading {
-    color: #4F7DA6;
-    margin: 1em 0.5em;
-    font-size: 2rem;
-}
-
 header {
     height: 55vh;
     display: flex;
@@ -20,10 +14,6 @@ header {
     background-position: center;
 }
 
-.header-top-container {
-    display: flex;
-    flex-direction: column;
-}
 
 .header-logo-img {
     margin: 2em;
@@ -31,38 +21,23 @@ header {
     width: 20vw;
 }
 
+.contact-btn-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 2em;
+}
+
 .contact-btn {
     margin: 1em;
     padding: 0.5em 1em;
     text-decoration: none;
     letter-spacing: 0.15rem;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     font-weight: 600;
     background-color: #4F7DA6;
     color: #F2F2F1;
     border-radius: 15em;
-}
-
-
-.header-nav {
-    padding-bottom: 1em;
-}
-
-.header-nav ul {
-    width: 100%;
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.header-nav a {
-    text-decoration: none;
-    color: #4F7DA6;
-    font-weight: 600;
-    font-size: 1rem;
 }
 
 main {
@@ -71,6 +46,9 @@ main {
 
 .welcome-heading {
     line-height: 2;
+    color: #4F7DA6;
+    margin: 1em 0.5em;
+    font-size: 2rem;
 }
 
 .welcome-subheading {
@@ -89,6 +67,12 @@ main {
     line-height: 2.5;
 }
 
+.contact-heading {
+    color: #F2B66D;
+    margin: 1em 0.5em;
+    font-size: 2rem;
+}
+
 form {
     margin: 2em auto;
     padding: 1em;
@@ -98,12 +82,12 @@ form {
 
 .form-input-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     margin: 1.5em;
 }
 
 label {
-    min-width: 80px;
+    min-width: 50px;
     font-size: 1.25rem;
     padding-right: 3em;
     grid-column: 1 / 2;
@@ -132,12 +116,9 @@ textarea {
     height: 5em;
 }
 
-.button {
-    text-align: center;
-}
-
 .button-container {
     text-align: center;
+    margin-bottom: 2em;
 }
 
 button {
@@ -145,14 +126,38 @@ button {
     background: #4F7DA6;
     border: 1px solid #4F7DA6;
     border-radius: 20em;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     padding: 1em 3em;
     letter-spacing: 0.1rem;
 }
 
+.social-links-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-link-container {
+    padding: 2em 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icon {
+    color: #F2B66D
+}
+
+.social-icon {
+    font-size: 3rem;
+}
+
+.social-link {
+    margin-top: 1em;
+}
+
 footer {
     text-align: center;
-    padding: 3em;
+    padding: 2.5em;
     background: #F2B66D;
     color: white;
 }
@@ -172,14 +177,11 @@ footer {
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .header-nav a {
-        font-size: 1.5rem;
-    }
 
     .contact-btn {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
-
+    
     .welcome-heading {
         font-size: 3rem;
     }
