@@ -7,11 +7,10 @@
         <meta name="author" content="Neil Ricci" />
         <meta 
             name="description"
-            content="Neatly Cleaning Services is a company in the San Francisco Bay Area that provides cleaning services for houses and apartments."
+            content="Neatly Cleaning Services offers top-quality house and apartment cleaning in the San Francisco Bay Area."
         /> 
         <title>Neatly House Services</title>
 
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_images/">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_images/favicon-16x16.png">
 
@@ -25,7 +24,7 @@
     <body>
         <header>
             <div class="header-top-container">
-                <img class="header-logo-img" src="assets/full_logo_image.png" alt="Neatly House Services company name and logo">
+                <img class="header-logo-img" src="assets/full_logo_image.png" alt="Neatly House Services logo">
                 <div>
                     <a class="contact-btn" href="#contact">Contact us</a>
                 </div>
@@ -54,7 +53,7 @@
                     <span class="welcome-subheading">and say <em>Goodbye</em> to the mess.</span>
                 </h2>
                 <div class="welcome-content-container">
-                    <img class="img" src="assets/kitchen.jpg">
+                    <img class="img" src="assets/kitchen.jpg" alt="Clean and organized kitchen space">
                     <p>Wave goodbye to the chore of cleaning and immerse yourself in what truly matters. Let us bring our expertise and top-notch supplies to ensure your space gleams with perfection. Neatly isn't just a service; it's a lifestyle. Elevate your living standards – choose Neatly today and experience the joy of pristine living.</p>
                 </div>
             </section>
@@ -69,20 +68,26 @@
             <section id="contact">
                 <h2 class="section-heading contact-heading">Contact Us</h2>
                 <form>
-                    <div>
-
+                    <div class="form-input-container">
+                        <label for="user_name">Name:</label>
+                        <input type="text" id="user_name" name="user_name" aria-required="true" required />
                     </div>
-                    <div>
-
+                    <div class="form-input-container">
+                        <label for="user_email">Email</label>
+                        <input type="email" id="user_email" name="user_email" aria-required="true" required />
                     </div>
-                    <div>
-                        
+                    <div class="form-input-container">
+                        <label for="user_msg">Message:</label>
+                        <textarea id="user_msg" name="user_message" aria-required="true" required></textarea>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Send your message</button>
                     </div>
                 </form>
             </section>
         </main>
         <footer>
-
+            <p>&copy; 2025 Neatly House Services. All rights reserved.</p>
         </footer>
     </body>
 </html>
