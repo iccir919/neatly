@@ -18,7 +18,8 @@ header {
 .header-logo-img {
     margin: 2em;
     min-width: 175px;
-    width: 20vw;
+    width: 40%;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 .contact-btn-container {
