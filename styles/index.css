@@ -122,7 +122,7 @@ textarea {
     margin-bottom: 2em;
 }
 
-button {
+.contact-button {
     color: white;
     background: #4F7DA6;
     border: 1px solid #4F7DA6;
@@ -130,6 +130,28 @@ button {
     font-size: 1.1rem;
     padding: 1em 3em;
     letter-spacing: 0.1rem;
+}
+
+.contact-button:hover {
+    cursor: pointer;
+}
+
+.phone-number-container {
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #F2B66D;
+}
+
+.phone-number-text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.phone-number-link {
+    color: #F2B66D;
+    font-size: 2.5rem;
 }
 
 .social-links-container {

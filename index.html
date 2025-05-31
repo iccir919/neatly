@@ -61,7 +61,10 @@
 
             <section id="contact">
                 <h2 class="contact-heading">Contact Us</h2>
-                <form>
+                <form 
+                    action="https://formspree.io/f/xgvywdwy"
+                    method="POST"
+                >
                     <div class="form-input-container">
                         <label for="user_name">Name:</label>
                         <input type="text" id="user_name" name="user_name" aria-required="true" required />
@@ -75,12 +78,16 @@
                         <textarea id="user_msg" name="user_message" aria-required="true" required></textarea>
                     </div>
                     <div class="button-container">
-                        <button type="submit">Send your message</button>
+                        <button class="contact-button" type="submit">Send your message</button>
                     </div>
                 </form>
+                <div class="phone-number-container">
+                    <span class="phone-number-text">Call us: </span>
+                    <a class="phone-number-link" href="tel:+4156405535">(415) 640-5535</a>
+                </div>
                 <div class="social-links-container">
                     <div class="social-link-container">
-                        <a class="social-link" href="#">
+                        <a class="social-link" href="https://www.instagram.com/neatly_cleaning_services/">
                             <i class="fa-brands fa-instagram social-icon"></i>
                         </a>
                     </div>
