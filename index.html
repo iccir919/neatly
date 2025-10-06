@@ -1,110 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQCLN9DJ3E"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-MQCLN9DJ3E');
-    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neatly Cleaning Services</title>
 
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-        <meta name="author" content="Neil Ricci" />
-        <meta 
-            name="description"
-            content="Neatly Cleaning Services offers top-quality house and apartment cleaning in the San Francisco Bay Area (including Oakland, Berkeley, Orinda, Walnut Creek, Lafayette, Richmond, Danville, San Ramon, Hayward, Castro Valley, Fremont)."
-        /> 
-        <title>Neatly Cleaning Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_images/favicon-16x16.png">
+<body>
+    <header>
+        <h1 class="logo">🧼 Neatly Cleaning Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Professional Cleaning, <br /> Done Neatly</h2>
+            <p>Serving homes and businesses across the Bay Area</p>
+            <a href="services.html" class="btn">Explore Services</a>
+        </div>
+    </section>
 
-        <script src="https://kit.fontawesome.com/c046fb424d.js" crossorigin="anonymous"></script>
+</body>
 
-        <link rel="stylesheet" href="/styles/index.css" />
-    </head>
-    <body>
-        <header>
-                <img class="header-logo-img" src="assets/full_logo_image.png" alt="Neatly House Services logo">
-                <div class="contact-btn-container">
-                    <a class="contact-btn" href="#contact">Contact us</a>
-                </div>
-        </header>
-        <main>
-
-            <section id="welcome">
-                <h2 class="section-heading welcome-heading"><em>Hello</em> from Neatly 
-                    <span class="welcome-subheading">and say <em>Goodbye</em> to the mess.</span>
-                </h2>
-                <div class="welcome-content-container">
-                    <img class="img" src="assets/kitchen.jpg" alt="Clean and organized kitchen space">
-                    <p>Wave goodbye to the chore of cleaning and immerse yourself in what truly matters. Let us bring our expertise and top-notch supplies to ensure your space gleams with perfection. Neatly isn't just a service; it's a lifestyle. Elevate your living standards – choose Neatly today and experience the joy of pristine living.</p>
-                </div>
-            </section>
-
-            <section id="about-us">
-            </section>
-
-            <section id="reviews"></section>
-
-            <section id="blog"></section>
-
-            <section id="contact">
-                <h2 class="contact-heading">Contact Us</h2>
-                <form 
-                    action="https://formspree.io/f/xgvywdwy"
-                    method="POST"
-                >
-                    <div class="form-input-container">
-                        <label for="user_name">Name:</label>
-                        <input type="text" id="user_name" name="user_name" aria-required="true" required />
-                    </div>
-                    <div class="form-input-container">
-                        <label for="user_email">Email</label>
-                        <input type="email" id="user_email" name="user_email" aria-required="true" required />
-                    </div>
-                    <div class="form-input-container">
-                        <label for="user_msg">Message:</label>
-                        <textarea id="user_msg" name="user_message" aria-required="true" required></textarea>
-                    </div>
-                    <div class="button-container">
-                        <button class="contact-button" type="submit">Send your message</button>
-                    </div>
-                </form>
-                <div class="phone-number-container">
-                    <span class="phone-number-text">Call us: </span>
-                    <a class="phone-number-link" href="tel:+4156405535">(415) 640-5535</a>
-                </div>
-                <div class="social-links-container">
-                    <div class="social-link-container">
-                        <a class="social-link" href="https://www.instagram.com/neatly_cleaning_services/">
-                            <i class="fa-brands fa-instagram social-icon"></i>
-                        </a>
-                    </div>
-                    <div class="social-link-container">
-                        <a class="social-link" href="https://www.facebook.com/profile.php?id=61556876248591">
-                            <i class="fa-brands fa-facebook social-icon"></i>
-                        </a>
-                    </div>
-                    <div class="social-link-container">
-                        <a class="social-link" href="https://www.yelp.com/biz/neatly-cleaning-services-oakland-2">
-                            <i class="fa-brands fa-yelp social-icon"></i>
-                        </a>
-                    </div>
-                </div>                
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2025 Neatly House Services. All rights reserved.</p>
-        </footer>
-    </body>
 </html>
