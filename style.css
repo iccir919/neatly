@@ -20,65 +20,118 @@ body {
 }
 
 header {
-    background: var(--blue);
-    color: white;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    padding: 1rem 2rem;
+    justify-content: space-between;
+    padding: 1.5rem 2.25rem;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 1.25rem;
+header .logo {
+  height: 150px;
+  width: auto;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5em;
+    gap: 1.25em;
 }
 
 nav a {
-    color: white;
+    color: var(--blue);
     text-decoration: none;
     font-weight: 500;
+    font-size: 1.5rem;
 }
 
 nav a.active, nav a:hover {
     border-bottom: 2px solid var(--yellow);
 }
 
-.hero {
-    background: var(--light-blue);
-    color: white;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+.intro {
+    position: relative;
     text-align: center;
-    background: linear-gradient(to bottom, var(--blue), var(--light-blue))
+    padding: 6em 1em;
+    margin: auto;
+    background: 
+        linear-gradient(
+            to bottom,
+            #4F7DA6 0%, /* hero blue */
+            rgba(0, 0, 0, 0.5) 40%, /* fades into darker overlay */
+            rgba(0, 0, 0, 0.6) 100%
+        ),
+        url("assets/spray-bottle.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5em;
+
+.intro h2 {
+    font-weight: 300;
+    font-size: 2.25rem;
+    line-height: 1.5;
+    color: var(--yellow);
+    margin-bottom: 1em;
 }
 
-.btn {
+.intro p {
+    line-height: 1.75;
+    margin: auto;
+    max-width: 750px;
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.intro .emphasize {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.intro .btn {
     display: inline-block;
-    margin-top: 0.5em;
+    margin-top: 1.5em;
     background: var(--yellow);
     color: white;
     border: none;
-    padding: 1em 1.5em;
+    padding: 1em 2em;
     border-radius: 0.25em;
+    font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
 }
 
-.btn:hover, .btn:active {
+.intro .btn:hover, .btn:active {
     background: var(--light-yellow);
+}
+
+
+footer {
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 1024px) {
+}
+
+
+@media (min-width: 1440px) {
+  body {}
 }
