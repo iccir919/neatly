@@ -1,0 +1,236 @@
+:root {
+    --blue: #4F7DA6;
+    --light-blue: #82B9E5;
+    --yellow: #F2B66D;
+    --light-yellow: #fabf58;
+    --light: #F2F2F1;
+    --text-dark: #2a2a2a;
+    --text-light: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: var(--light);
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25em 2em;
+}
+
+header .logo {
+  height: 150px;
+}
+
+nav ul {
+    padding-inline-start: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+nav a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+nav a.active, nav a:hover {
+    border-bottom: 2px solid var(--yellow);
+}
+
+footer {
+    background-color: var(--blue);
+    color: var(--text-light);
+    text-align: center;
+    padding: 2em 0;
+}
+
+/* Intro Section */
+
+.intro {
+    background: 
+        linear-gradient(
+            to bottom,
+            #4F7DA6 0%, /* hero blue */
+            rgba(0, 0, 0, 0.5) 40%, /* fades into darker overlay */
+            rgba(0, 0, 0, 0.6) 100%
+        ),
+        url("assets/spray-bottle.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: var(--text-light);
+    text-align: center;
+
+    padding: 4em 1em;
+    margin: auto;
+}
+
+
+.intro h2 {
+    font-weight: 300;
+    font-size: 2.25rem;
+    line-height: 1.5;
+    color: var(--yellow);
+    margin-bottom: 1em;
+}
+
+.intro p {
+    line-height: 1.75;
+    margin: auto;
+    max-width: 750px;
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.intro .emphasize {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.intro .btn {
+    margin-top: 2em;
+    padding: 1em 2em;
+
+    background: var(--yellow);
+    color: var(--light-);
+    border: none;
+    border-radius: 0.25em;
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.intro .btn:hover, .btn:active {
+    background: var(--light-yellow);
+}
+
+/* Contact Form */
+
+.contact {    
+    padding: 1em 1.5em;
+    background: var(--light);
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: var(--blue)
+}
+
+.contact-form {
+    padding: 2em;
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    background: white;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, 
+input:active,
+textarea:focus,
+textarea:active,
+select:focus,
+select:active {
+    border-color: var(--blue);
+    outline: none;
+}
+
+button.form-btn {
+    width: 100%;
+    background-color: var(--yellow);
+    color: var(--text-dark);
+    border: none;
+    padding: 1em;
+    font-size: 1.25em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button.form-btn:hover,
+button.form-btn:active {
+    background: var(--light-yellow);
+}
+
+/* Services */
+.services {
+    width: 100%;
+    padding: 2em 2em 4em;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 1.5em;
+    color: var(--blue);
+}
+
+.service-list {
+    margin: auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.service-card {
+    background: white;
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transform: transform 0.3s ease;
+}
+
+.service-card:hover,
+.service-card:active {
+    transform: translateY(-5px);
+}
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        gap: 5em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+}
