@@ -123,6 +123,57 @@ footer {
     background: var(--light-yellow);
 }
 
+/* Service Area Section */
+.service-areas {
+    background-color: var(--light);
+    padding: 4em 2em;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service-areas h2 {
+    color: var(--blue);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.service-areas p {
+    color: var(--text-dark);
+    font-size: 1.25rem;
+    margin-bottom: 2.5em;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.area {
+    background: var(--text-light);
+    border-radius: .75em;
+    padding: 1.5em;
+}
+
+.area h3 {
+    color: var(--blue);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.area ul {
+    list-style: none;
+    padding: 0;
+}
+
+.area li {
+    font-size: 0.85rem;
+    margin-bottom: 0.5em;
+    color: var(--text-dark);
+}
+
 /* Contact Form */
 
 .contact {    
