@@ -27,8 +27,55 @@ header {
     padding: 1.25em 2em;
 }
 
-header .logo {
-  height: 150px;
+.logo {
+    position: relative;
+    display: inline-block;
+}
+
+.logo-base {
+    width: 260px;
+    display: block;
+}
+
+.bubble {
+    position: absolute;
+    background: #5e7ea0;
+    border-radius: 50%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.bubble-1 {
+    width: 10px;
+    height: 10px;
+    top: 11px;
+    left: 45px;
+    animation-delay: 0s;
+}
+
+.bubble-2 {
+    width: 14px;
+    height: 14px;
+    top: 0px;
+    left: 55px;
+    animation-delay: 0.4s;
+}
+
+.bubble-3 {
+    width: 18px;
+    height: 18px;
+    top: -8px;
+    left: 70px;
+    animation-delay: 0.8s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-5px) scale(1.05);
+    }
 }
 
 nav ul {
