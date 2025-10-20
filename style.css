@@ -142,7 +142,7 @@ footer {
     max-width: 750px;
     font-size: 1.25rem;
     color: white;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .intro .emphasize {
@@ -150,23 +150,30 @@ footer {
     font-weight: 600;
 }
 
-.intro .btn {
+.intro .action-buttons {
+    display: flex;
+    gap: 1.5em;
+
+}
+
+.button {
+    display: inline-block;
     margin-top: 2em;
-    padding: 1em 2em;
+    padding: .75em 1.75em;
 
     background: var(--yellow);
-    color: var(--light-);
+    color: var(--light);
     border: none;
     border-radius: 0.25em;
 
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
 
     cursor: pointer;
 }
 
-.intro .btn:hover, .btn:active {
+.button:hover, .button:active {
     background: var(--light-yellow);
 }
 
@@ -330,5 +337,7 @@ button.form-btn:active {
 }
 
 @media screen and (min-width: 1024px) {
-
+    .service-list {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
 }
