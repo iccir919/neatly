@@ -15,19 +15,6 @@ Neatly Cleaning Services provides exceptional cleaning solutions for homes and o
 - **Contact Form**: Easy way for customers to reach out and request services
 - **Clean UI**: Professional and modern design reflecting our brand values
 
-## Service Areas
-
-We proudly serve:
-
-### San Francisco
-- Castro, Nob Hill, Russian Hill, Haight-Ashbury, Mission, Financial District
-
-### East Bay
-- Oakland, Piedmont, Fremont, Hayward, Concord, Berkeley, Lafayette, San Ramon, Danville, Castro Valley
-
-### North Bay
-- Mill Valley, Tiburon, Marin City, Sausalito, Corte Madera, Larkspur, Kentfield
-
 ## Tech Stack
 
 - **HTML5**: Semantic markup
